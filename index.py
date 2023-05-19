@@ -10,5 +10,13 @@ def home():
 def courses():
     return render_template("courses.html")
 
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
+@app.route('/cart')
+def cart():
+    return render_template("cart.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
