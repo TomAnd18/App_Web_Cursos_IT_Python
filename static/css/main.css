@@ -490,9 +490,10 @@ footer {
     align-items: center;
     background-image: url('../images/background-home.jpg');
     background-size: cover;
+    padding: 3rem 0;
 }
 
-.accordion {
+#accordionFlushExampleabout {
     width: 50% !important;
     margin: 8rem 0;
 }
@@ -503,15 +504,147 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
 }
 
 .cards-courses-container {
+    width: 60%;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.card-course {
+    /* width: 28%; */
+    margin: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-course:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.452);
+}
+
+.img-course-container {
+    width: 100%;
+    /* min-height: 20rem; */
+}
+
+.img-course-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cardbody-course {
+    width: 100%;
+    padding: 1rem 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #636363;
+    font-family: OpenSans,Arial,sans-serif;
+}
+
+.cardbody-course h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cardbody-course h3 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardbody-course p {
+    font-size: 0.8rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número de líneas permitidas */
+    -webkit-box-orient: vertical;
+}
+
+.quali-views-container {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.quali-views-container span {
+    font-weight: bold;
+}
+
+.quali-views-container h6 {
+    font-size: 0.8rem;
+    margin: 0%;
+    margin-left: 5px;
+}
+  
+
+
+.filtros-container {
+    width: 15%;
+    /* background-color: #f5f7f8; */
+    padding: 1rem 0;
+    position: sticky;
+    top: 9.1rem;
+}
+
+.accordion-button {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+}
+
+.container-options-filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.filtros-container h3 {
+    font-size: 1.2rem;
+    margin: 0%;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.form-check-input[type=radio] {
+    border-radius: 0% !important;
+}
+
+.accordion {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+/* ========================================================== */
+
+@media screen and (max-width: 1400px) {
+    .filtros-container {
+        width: 20%;
+        position: static;
+    }
+
+    .cards-courses-container {
+        width: 70%;
+    }
 }
 
 /* ========================================================== */
@@ -618,4 +751,53 @@ footer {
     .container-img-home {
         background-image: url('../images/background-carousel-one-smartphone.jpg');
     }
+
+    .container-infopage-home {
+        flex-direction: column;
+    }
+
+    .infopage {
+        width: 100%;
+    }
+
+    .infopage h1 {
+        font-size: 1.2rem;
+    }
+
+    .infopage h2 {
+        font-size: 1.6rem;
+    }
+
+    .infopage p {
+        font-size: 1.1rem;
+    }
+
+    .ico-cursosimg {
+        width: 30%;
+    }
+
+    .container-fevsbe {
+        width: 80%;
+        margin-bottom: 8rem;
+    }
+
+
+    .containerglobal-courses {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .cards-courses-container {
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+
+    .filtros-container {
+        width: 90%;
+    }
+
+    /* .card-course {
+        width: 90%;
+    } */
 }

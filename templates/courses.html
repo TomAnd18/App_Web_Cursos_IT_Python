@@ -2,7 +2,74 @@
 
 {% block content %}
     <div class="containerglobal-courses">
-        <h1> Cursos </h1>
+        <div class="filtros-container">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Filtros
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" style="">
+                    <div class="accordion-body">
+                      <div class="container-options-filter">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Todos los cursos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Front-End
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Back-End
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Full Stack
+                            </label>
+                        </div>
+                    </div>
+                    <h3>Duración</h3>
+                    <div class="container-options-filter" style="margin-top: 0;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                                Menor a 150h
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                            <label class="form-check-label" for="flexRadioDefault6">
+                                de 150h a 250h
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                            <label class="form-check-label" for="flexRadioDefault7">
+                                de 250h a 350h
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
+                            <label class="form-check-label" for="flexRadioDefault8">
+                                Mayor a 350h
+                            </label>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
         <div class="cards-courses-container" id="cards-courses-container">
 
         </div>

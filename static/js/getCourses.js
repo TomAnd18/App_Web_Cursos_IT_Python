@@ -12,32 +12,48 @@ function obtenerDatos() {
 
                 // Crear los elementos HTML para la card
                 const card = document.createElement('div');  //Aquí se está creando un nuevo elemento HTML div y asignándolo a la variable card. Luego se agrega la clase "card" a ese elemento utilizando el método classList.add().
-                card.classList.add('card');
+                card.classList.add('card-course');
 
-                // const imagen = document.createElement('img');
-                // imagen.classList.add('card-img-top');
-                // imagen.src = objeto.imagen;
+                const imgContainer = document.createElement('div');
+                imgContainer.classList.add('img-course-container');
+
+                const imagen = document.createElement('img');
+                imagen.src = objeto.image;
+
 
                 const cardBody = document.createElement('div');
                 cardBody.classList.add('cardbody-course');
 
-                const titulo = document.createElement('h5');
+                const price = document.createElement('h2');
+                price.textContent = objeto['price'].toLocaleString('es-AR', { style: 'currency', currency: 'ARS' });
+
+                const titulo = document.createElement('h3');
                 titulo.classList.add('cardtitle-course');
                 titulo.textContent = objeto["name"];
 
-                // const duracion = document.createElement('p');
-                // duracion.classList.add('card-text');
-                // duracion.textContent = 'Duración: ' + objeto.duracion + ' horas';
+                const description = document.createElement('p');
+                description.textContent = objeto["description"];
 
-                // const valor = document.createElement('p');
-                // valor.classList.add('card-text');
-                // valor.textContent = 'Valor: $' + objeto.valor;
 
+                const qualiAndViewsContainer = document.createElement('div');
+                qualiAndViewsContainer.classList.add('quali-views-container');
+
+                const qualification = document.createElement('span');
+                qualification.textContent = "⭐" + objeto["qualification"];
+
+                const views = document.createElement('h6');
+                views.textContent = "(+ " + objeto['views'].toLocaleString('es-AR') + " vistas)";
+
+
+                qualiAndViewsContainer.appendChild(qualification);
+                qualiAndViewsContainer.appendChild(views);
+
+                cardBody.appendChild(price);
                 cardBody.appendChild(titulo);
-                // cardBody.appendChild(duracion);
-                // cardBody.appendChild(valor);
-
-                // card.appendChild(imagen);
+                cardBody.appendChild(description);
+                cardBody.appendChild(qualiAndViewsContainer);
+                imgContainer.appendChild(imagen);
+                card.appendChild(imgContainer);
                 card.appendChild(cardBody);
 
                 cardsContainer.appendChild(card);
@@ -48,4 +64,4 @@ function obtenerDatos() {
 
   obtenerDatos();
 
-  setInterval(obtenerDatos, 5000);
+//   setInterval(obtenerDatos, 5000);
