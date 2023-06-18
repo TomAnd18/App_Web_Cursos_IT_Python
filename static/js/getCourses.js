@@ -5,7 +5,7 @@ function obtenerDatos() {
         .then(data => {
             const cardsContainer = document.getElementById('cards-courses-container');
 
-            cardsContainer.innerHTML = ''; //limpia todo lo que hay en la card anterior(esto hace que siempre que se ejecute la funcion la card cargue de nuevo y no muestre info que ya tenga cargado)
+            // cardsContainer.innerHTML = '';
             
             for (let key in data) {  //La variable data contiene los datos en formato JSON que se obtienen utilizando la función fetch.
                 const objeto = data[key]; //se utiliza para recorrer los objetos dentro de data. En cada iteración, la variable key tomará el valor de una de las propiedades de data. La variable objeto se utiliza para almacenar el objeto que se encuentra en la posición key de data.

@@ -284,6 +284,73 @@ footer {
     justify-content: center !important;
 }
 
+.container-registerexitoso {
+    width: 100%;
+    padding: 1rem;
+}
+
+.register-exitoso {
+    width: 100%;
+    padding: 1rem;
+    background: #198754;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.register-exitoso p {
+    margin: 0%;
+}
+
+#name-profile {
+    background: #37aaff;
+    border: none;
+    border-radius: 20rem;
+    padding: 10px 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: 0px solid #37aaff;
+}
+
+#name-profile:hover {
+    outline-width: 2px;
+    outline-offset: 2px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    right: 30px !important;
+    top: 110% !important;
+    left: auto !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.profile-icono-usercontainer {
+    display: none;
+}
+
+#menu-profile {
+    background: #37aaff !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+}
+
+.dropdown-item:hover {
+    color: #000 !important;
+}
+
 /* ============================HOME============================== */
 
 .container-global-home {
@@ -441,6 +508,11 @@ footer {
 
 .card:hover #ico-infocursos {
     animation: rotate 2s backwards;
+}
+
+.accordion-button {
+    background-color: none !important;
+    background: none !important;
 }
 
 @keyframes rotate {
@@ -800,4 +872,8 @@ footer {
     /* .card-course {
         width: 90%;
     } */
+
+    .profile-icono-usercontainer {
+        text-align: end;
+    }
 }
