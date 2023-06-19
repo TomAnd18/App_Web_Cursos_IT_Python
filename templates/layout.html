@@ -29,8 +29,8 @@
                             </a>
                           
                             <ul id="menu-profile" class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#!">Perfil</a></li>
-                              <li><a class="dropdown-item" href="#!">Mis Cursos</a></li>
+                              <li><a class="dropdown-item" href="{{ url_for('profile') }}">Perfil</a></li>
+                              <li><a class="dropdown-item" href="{{ url_for('mycourses') }}">Mis Cursos</a></li>
                               <li><a id="logout-user" class="dropdown-item" href="#!">Cerrar Sesion</a></li>
                             </ul>
                         </div>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                         <div class="btn-submit-login">
-                            <button id="btn-registrarse" class="btn btn-primary" type="submit">Registrarse</button>
+                            <button style="width: 100%; background: #1877f2; line-height: 35px; font-size: 18px; padding: 0 0 4px 0; font-weight: bold;" id="btn-registrarse" class="btn btn-primary" type="submit">Registrarse</button>
                         </div>
                     </form>
                 </div>
@@ -172,7 +172,7 @@
                                 <label for="user-login">Usuario</label>
                             </div>
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="password-login" placeholder="Password">
+                                <input type="password" class="form-control" id="password-login" placeholder="Password" maxlength="8">
                                 <label for="password-login">Contraseña</label>
                             </div>
                             <div class="form-check">
@@ -184,8 +184,15 @@
 
                             <div id="login-validationuser" style="width: 100%; margin-top: 1rem; display: none;">
                                 <div style="padding: 0 8px; margin: 0;" class="alert alert-danger d-flex align-items-center" role="alert">
-                                    <div style="font-size: 14px;">
-                                      Usuario y/o contraseña incorrecto
+                                    <div id="info-user-pass-validation" style="font-size: 14px;">
+                                        Usuario y/o contraseña incorrecto
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="login-validationuser-empty" style="width: 100%; margin-top: 1rem; display: none;">
+                                <div style="padding: 0 8px; margin: 0;" class="alert alert-warning d-flex align-items-center" role="alert">
+                                    <div id="info-user-pass-validation" style="font-size: 14px;">
+                                        Ingrese su usuario y contraseña
                                     </div>
                                 </div>
                             </div>

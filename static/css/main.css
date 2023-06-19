@@ -577,7 +577,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
 }
 
@@ -674,7 +674,7 @@ footer {
     /* background-color: #f5f7f8; */
     padding: 1rem 0;
     position: sticky;
-    top: 9.1rem;
+    top: 5rem;
 }
 
 .accordion-button {
@@ -706,6 +706,168 @@ footer {
     width: 100% !important;
 }
 
+/* ============================CARRITO============================== */
+
+.container-global-cart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    flex-direction: column;
+}
+
+.cart-empty-container {
+    width: 60%;
+    padding: 1rem 0 5rem 0;
+}
+
+.cart-empty-container h3 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: -2px;
+}
+
+.cart-empty-container button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 22px 5px 22px;
+    margin-top: 2rem;
+    background: #86b7fe;
+    border: none;
+    border-radius: 10px 0;
+    outline: 0px solid #86b7fe;
+    transition: all 0.1s ease-in-out;
+    /* box-shadow: -6px 6px 3px rgba(0, 0, 0, 0.2); */
+}
+
+.cart-empty-container button:hover {
+    outline-width: 3px;
+    outline-offset: 2px;
+    transition: all 0.1s ease-in-out;
+    
+}
+
+.cart-empty-container button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cart-empty-container button a img {
+    width: 25px;
+    margin-left: 0.5rem;
+    padding-bottom: 5px;
+}
+
+
+
+.cart-container-one {
+    width: 70%;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.cart-container-items {
+    width: 80%;
+    margin-right: 4rem;
+}
+
+.cart-container-items h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.items-cart-container {
+    width: 100%;
+}
+
+.item-cart-container {
+    /* background-color: #373b3e17; */
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+    border-top: 1px solid #d1d7dc;
+    padding-top: 1rem;
+}
+
+.img-info-container {
+    display: flex;
+    width: 80%;
+}
+
+.option-price-container {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-price-container a {
+    text-decoration: none;
+    color: #5624d0;
+    font-size: 0.9rem;
+}
+
+.option-price-container a:hover {
+    text-decoration: underline;
+}
+
+.option-price-container span {
+    color: #198754;
+    font-weight: bold;
+}
+
+.item-img-container {
+    width: 20%;
+}
+
+.item-img-container img {
+    width: 100%;
+}
+
+.item-info-container {
+    width: 80%;
+    padding-left: 2rem;
+}
+
+.item-info-container h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.item-info-container h6 {
+    font-size: 0.9rem;
+}
+
+.pay-courses-container {
+    width: 20%;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pay-courses-container span {
+    width: 100%;
+    font-weight: bold;
+}
+
+.pay-courses-container button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #198754;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
 /* ========================================================== */
 
 @media screen and (max-width: 1400px) {
@@ -716,6 +878,10 @@ footer {
 
     .cards-courses-container {
         width: 70%;
+    }
+
+    .cart-container-one {
+        width: 90%;
     }
 }
 
@@ -875,5 +1041,34 @@ footer {
 
     .profile-icono-usercontainer {
         text-align: end;
+    }
+
+    .container-global-cart {
+        padding-top: 1rem;
+    }
+
+    .cart-container-one {
+        flex-direction: column;
+    }
+
+    .cart-container-items {
+        width: 100%;
+        margin: 0;
+    }
+
+    .item-cart-container {
+        flex-direction: column;
+    }
+
+    .img-info-container {
+        width: 100%;
+    }
+
+    .option-price-container {
+        width: 100%;
+    }
+
+    .pay-courses-container {
+        width: 100%;
     }
 }

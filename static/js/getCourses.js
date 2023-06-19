@@ -10,8 +10,7 @@ function obtenerDatos() {
             for (let key in data) {  //La variable data contiene los datos en formato JSON que se obtienen utilizando la función fetch.
                 const objeto = data[key]; //se utiliza para recorrer los objetos dentro de data. En cada iteración, la variable key tomará el valor de una de las propiedades de data. La variable objeto se utiliza para almacenar el objeto que se encuentra en la posición key de data.
 
-                // Crear los elementos HTML para la card
-                const card = document.createElement('div');  //Aquí se está creando un nuevo elemento HTML div y asignándolo a la variable card. Luego se agrega la clase "card" a ese elemento utilizando el método classList.add().
+                const card = document.createElement('div');
                 card.classList.add('card-course');
 
                 const imgContainer = document.createElement('div');

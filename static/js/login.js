@@ -1,11 +1,25 @@
 const formu = document.getElementById('login-validation');
 
+const loginIncorrectoEmpty = document.getElementById('login-validationuser-empty');
+const loginIncorrecto = document.getElementById('login-validationuser');
+
 
 formu.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const email = document.getElementById('user-login').value;
     const password = document.getElementById('password-login').value;
+
+    if(email === '' || password === '') {
+        loginIncorrectoEmpty.style.display = 'block';
+
+        loginIncorrecto.style.display == 'block' ? loginIncorrecto.style.display = 'none' : '';
+
+        setTimeout(function() {
+            loginIncorrectoEmpty.style.display = "none";
+        }, 5000);
+        return;
+    }
 
     fetch('https://python-app-web-cursos-it-default-rtdb.firebaseio.com/users.json')
         .then(response => response.json())
@@ -36,9 +50,12 @@ function buscarUsuario(datos, email, password) {
         } 
         
     }
+    
     if(!encontre) {
-        const loginIncorrecto = document.getElementById('login-validationuser');
+        
         loginIncorrecto.style.display = 'block';
+
+        loginIncorrectoEmpty.style.display == 'block' ? loginIncorrectoEmpty.style.display = 'none' : '';
 
         setTimeout(function() {
             loginIncorrecto.style.display = "none";
