@@ -369,10 +369,10 @@ footer {
 }
 
 .cards-info-cursos-home {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
-    margin: 5rem 0;
+    margin: 5rem auto;
     flex-wrap: wrap;
 }
 
@@ -713,7 +713,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 2rem;
     flex-direction: column;
 }
 
@@ -768,11 +768,11 @@ footer {
     width: 70%;
     display: flex;
     margin-bottom: 5rem;
+    justify-content: space-between;
 }
 
 .cart-container-items {
-    width: 80%;
-    margin-right: 4rem;
+    width: 70%;
 }
 
 .cart-container-items h3 {
@@ -789,18 +789,19 @@ footer {
     /* background-color: #373b3e17; */
     display: flex;
     width: 100%;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
     border-top: 1px solid #d1d7dc;
     padding-top: 1rem;
 }
 
 .img-info-container {
     display: flex;
-    width: 80%;
+    width: 70%;
+    padding-right: 1rem;
 }
 
 .option-price-container {
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
 }
@@ -809,6 +810,7 @@ footer {
     text-decoration: none;
     color: #5624d0;
     font-size: 0.9rem;
+    height: max-content;
 }
 
 .option-price-container a:hover {
@@ -830,7 +832,7 @@ footer {
 
 .item-info-container {
     width: 80%;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .item-info-container h2 {
@@ -843,8 +845,8 @@ footer {
 }
 
 .pay-courses-container {
-    width: 20%;
-    padding-top: 2.5rem;
+    width: 25%;
+    padding-top: 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -854,6 +856,7 @@ footer {
 .pay-courses-container span {
     width: 100%;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .pay-courses-container button {
@@ -867,6 +870,289 @@ footer {
     margin-top: 1rem;
 }
 
+.cupon-container {
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #d1d7dc;
+}
+
+.cupon-container h3 {
+    font-size: 1.1rem;
+}
+
+.input-btn-cupon {
+    width: 100%;
+    display: flex;
+}
+
+.input-btn-cupon input {
+    height: auto;
+    width: 70%;
+    padding: 0 10px;
+    border-radius: 0px;
+    border: 1px solid #000;
+}
+
+.input-btn-cupon button {
+    background: #9f00ff;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    width: 30%;
+    margin: 0%;
+}
+
+/* ============================DETAILS COURSE============================== */
+
+.container-global-details-course {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.course-details-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8rem;
+}
+
+.detailscomplete-course-container {
+    width: 60%;
+}
+
+.head-information-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 3rem 1rem;
+    /* background: #529ca1; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* .container-global-details-course::before {
+    content: "";
+    background-color: #529ca1;
+    background-color: #0A2E36;
+    background-color: #1A5E63;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 30%;
+    z-index: -2;
+} */
+
+.head-information-container h2 {
+    font-weight: bold;
+    /* color: #fff; */
+} 
+
+.head-information-container p {
+    font-size: 1.1rem;
+    /* color: #fff; */
+}
+
+.more-details-price-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.calificacion-estudiantes-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.calificacion-estudiantes-container span {
+    font-size: 0.9rem;
+    /* color: #fff; */
+    display: flex;
+    align-items: center;
+}
+
+.calificacion-estudiantes-container h4 {
+    font-size: 0.9rem;
+    margin: 0 8px;
+}
+
+.head-information-container h4 {
+    font-size: 0.9rem;
+    /* color: #fff; */
+}
+
+.info-learn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 1px solid #d1d7dc;
+}
+
+.info-learn-container h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info-learn-container ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+.info-learn-container ul li {
+    padding: 8px 0;
+    font-size: 0.85rem;
+}
+
+.content-course-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.content-course-container h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.content-course-container ul {
+    width: 100%;
+    list-style: none;
+    border-top: 1px solid #d1d7dc;
+    padding: 0%;
+}
+
+.content-course-container ul li {
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background: #f7f9fa;
+    border-left: 1px solid #d1d7dc;
+    border-right: 1px solid #d1d7dc;
+    border-bottom: 1px solid #d1d7dc;
+}
+
+.tittle-content {
+    font-weight: 600;
+}
+
+.requisitos-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.requisitos-container h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.requisitos-container ul {
+    width: 100%;
+}
+
+.requisitos-container ul li {
+    font-size: 0.9rem;
+    padding: 8px 0;
+}
+
+.image-course-container {
+    width: 100%;
+}
+
+.image-course-container img {
+    width: 100%;
+}
+
+.more-details-price-container {
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    height: max-content;
+    position: sticky;
+    top: 8rem;
+    z-index: 10;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.more-details-price-container span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 1rem;
+}
+
+.more-details-price-container button {
+    margin-top: 1rem;
+    width: 100%;
+    background: #198754c9;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 0;
+}
+
+.more-details-price-container button:hover {
+    opacity: 0.9;
+}
+
+.btn-buynow {
+    background: none !important;
+    border: 1px solid #000 !important;
+    color: #000 !important;
+}
+
+.btn-buynow:hover {
+    background: #00000011 !important;
+}
+
+.more-details-price-container h6 {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.include-course-container h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.include-course-container ul {
+    list-style: none;
+    width: 100%;
+    padding: 0%;
+}
+
+.include-course-container ul li {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* ========================================================== */
+
+@media screen and (max-width: 1850px) {
+    .container-global-details-course::before {
+        height: 39%;
+    }
+}
 
 /* ========================================================== */
 
@@ -882,6 +1168,14 @@ footer {
 
     .cart-container-one {
         width: 90%;
+    }
+
+    .course-details-container {
+        width: 80%;
+    }
+
+    .container-global-details-course::before {
+        height: 39%;
     }
 }
 
@@ -1070,5 +1364,56 @@ footer {
 
     .pay-courses-container {
         width: 100%;
+    }
+
+    .course-details-container {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .detailscomplete-course-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .container-global-details-course {
+        padding-top: 0;
+    }
+
+    .head-information-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .head-information-container p {
+        font-size: 0.9rem;
+    }
+
+    .head-information-container h4 {
+        font-size: 0.8rem;
+    }
+
+    .head-information-container {
+        padding: 2rem 0;
+        box-shadow: none;
+    }
+
+    .info-learn-container {
+        margin-top: 2rem;
+    }
+
+    .info-learn-container ul li {
+        font-size: 0.7rem;
+    }
+
+    .content-course-container ul li {
+        font-size: 0.85rem;
+    }
+
+    .more-details-price-container {
+        width: 90%;
+        margin: auto;
+        box-shadow: none;
+        border-radius: 0;
     }
 }

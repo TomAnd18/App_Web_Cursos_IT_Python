@@ -13,6 +13,10 @@ function obtenerDatos() {
                 const card = document.createElement('div');
                 card.classList.add('card-course');
 
+                card.addEventListener('click', function() {
+                    window.location.href = '/details?id=' + key;
+                });
+
                 const imgContainer = document.createElement('div');
                 imgContainer.classList.add('img-course-container');
 

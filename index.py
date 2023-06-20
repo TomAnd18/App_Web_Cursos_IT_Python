@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template;
+from flask import request;
 
 app = Flask(__name__)
 
@@ -25,6 +26,15 @@ def mycourses():
 @app.route('/profile')
 def profile():
     return render_template("profile.html")
+
+@app.route('/details')
+def details():
+    parametro = request.args.get('id')
+    return render_template("details.html", parametro=parametro)
+
+# @app.route('/details')
+# def details():
+#     return render_template("details.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
