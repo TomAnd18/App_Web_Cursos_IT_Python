@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="container-global-cart">
+    <div id="container-global-cart" class="container-global-cart">
+        
         <!-- <div class="cart-empty-container">
             <h3> El carrito está vacío </h3>
             <p> Una vez que añadas algo a tu carrito, aparecerá acá. ¿Listo para empezar? </p>
@@ -12,87 +13,30 @@
                 </a>
             </button>
         </div> -->
-        <div class="cart-container-one">
+
+        <!-- <div class="cart-container-one">
             <div class="cart-container-items">
                 <h3>Mi Carrito</h3>
                 <span>5 cursos en la cesta</span>
 
                 <div class="items-cart-container">
+
                     <div class="item-cart-container">
                         <div class="img-info-container">
                             <div class="item-img-container">
-                                <img src="https://img-c.udemycdn.com/course/240x135/3662358_4d6e_2.jpg" alt="course">
+                                <img id="img-setCart" src="https://img-c.udemycdn.com/course/240x135/3662358_4d6e_2.jpg" alt="course">
                             </div>
                             <div class="item-info-container">
-                                <h2>Python 3 Plus: Python desde Cero + Data Analysis y Matplot</h2>
-                                <h6>71,5 horas en total - 692 clases - Todos los niveles</h6>
+                                <h2 id="name-setCart">Python 3 Plus: Python desde Cero + Data Analysis y Matplot</h2>
+                                <h6><span id="horas-setCart">71,5</span> horas en total - <span id="clases-setCart">692 clases</span> - Todos los niveles</h6>
                             </div>
                         </div>
                         <div class="option-price-container">
-                            <a href="#!">Eliminar</a>
-                            <span>$ 12.500,00</span>
+                            <a id="delete-itemCart" href="#!">Eliminar</a>
+                            <span id="price-setCart">$ 12.500,00</span>
                         </div>
                     </div>
-                    <div class="item-cart-container">
-                        <div class="img-info-container">
-                            <div class="item-img-container">
-                                <img src="https://img-c.udemycdn.com/course/240x135/3662358_4d6e_2.jpg" alt="course">
-                            </div>
-                            <div class="item-info-container">
-                                <h2>Python 3 Plus: Python desde Cero + Data Analysis y Matplot</h2>
-                                <h6>71,5 horas en total - 692 clases - Todos los niveles</h6>
-                            </div>
-                        </div>
-                        <div class="option-price-container">
-                            <a href="#!">Eliminar</a>
-                            <span>$ 12.500,00</span>
-                        </div>
-                    </div>
-                    <div class="item-cart-container">
-                        <div class="img-info-container">
-                            <div class="item-img-container">
-                                <img src="https://img-c.udemycdn.com/course/240x135/3662358_4d6e_2.jpg" alt="course">
-                            </div>
-                            <div class="item-info-container">
-                                <h2>Python 3 Plus: Python desde Cero + Data Analysis y Matplot</h2>
-                                <h6>71,5 horas en total - 692 clases - Todos los niveles</h6>
-                            </div>
-                        </div>
-                        <div class="option-price-container">
-                            <a href="#!">Eliminar</a>
-                            <span>$ 12.500,00</span>
-                        </div>
-                    </div>
-                    <div class="item-cart-container">
-                        <div class="img-info-container">
-                            <div class="item-img-container">
-                                <img src="https://img-c.udemycdn.com/course/240x135/3662358_4d6e_2.jpg" alt="course">
-                            </div>
-                            <div class="item-info-container">
-                                <h2>Python 3 Plus: Python desde Cero + Data Analysis y Matplot</h2>
-                                <h6>71,5 horas en total - 692 clases - Todos los niveles</h6>
-                            </div>
-                        </div>
-                        <div class="option-price-container">
-                            <a href="#!">Eliminar</a>
-                            <span>$ 12.500,00</span>
-                        </div>
-                    </div>
-                    <div class="item-cart-container">
-                        <div class="img-info-container">
-                            <div class="item-img-container">
-                                <img src="https://img-c.udemycdn.com/course/240x135/3662358_4d6e_2.jpg" alt="course">
-                            </div>
-                            <div class="item-info-container">
-                                <h2>Python 3 Plus: Python desde Cero + Data Analysis y Matplot</h2>
-                                <h6>71,5 horas en total - 692 clases - Todos los niveles</h6>
-                            </div>
-                        </div>
-                        <div class="option-price-container">
-                            <a href="#!">Eliminar</a>
-                            <span>$ 12.500,00</span>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="pay-courses-container">
@@ -106,6 +50,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
     </div>
+
+    <script src="../static/js/getItemsCart.js"></script>
 {% endblock%}

@@ -1,50 +1,58 @@
 const btnAddCourse = document.getElementById('btn-addcourse');
 
 btnAddCourse.addEventListener('click', () => {
-    var dato = localStorage.getItem("cart");
+    const urlParams = new URLSearchParams(window.location.search);
+    const cursoId = urlParams.get('id');
 
-    const name = document.getElementById('tittle-course').textContent;
+    const dato = localStorage.getItem("cart");
 
-    if (dato !== null) {
-        // El dato existe en el localStorage
+    fetch('https://python-app-web-cursos-it-default-rtdb.firebaseio.com/cursos/' + cursoId + '.json')
+    .then(response => response.json())
+    .then(curso => {
+        const datos = {
+            "name": curso.name,
+            "image": curso.image,
+            "duration": curso.duration,
+            "price": curso.price
+        }
+        return datos;
+    })
+    .then(datos => saveDato(datos));
 
-        let cart = localStorage.getItem("cart");
+    function saveDato(datos) {
+        if (dato !== null) {
+            // El dato existe en el localStorage
+    
+            let datosCart = localStorage.getItem("cart");
+            const cart = JSON.parse(datosCart);
+    
+            var encontre = cart.find(e => e.name == datos.name);
+    
+            if(!encontre) {
+                saveItemCart(cart);
+            }
+    
+        } else {
+            // El dato no existe en el localStorage
+            let cart = [];
+            saveItemCart(cart);
+        }
 
-        const miArrayRecuperado = JSON.parse(cart);
-
-        var encontre = false;
-
-        miArrayRecuperado.map(e => { 
-            if(e == name) {
-                encontre = true;
-            } 
-        });
-
-        if(!encontre) {
-            miArrayRecuperado.push(name);
-            let arrayCart = JSON.stringify(miArrayRecuperado);
+        function saveItemCart(cart) {
+            cart.push({
+                "name":datos.name,
+                "image": datos.image,
+                "duration": datos.duration,
+                "price": datos.price
+            });
+    
+            let arrayCart = JSON.stringify(cart);
             localStorage.setItem("cart", arrayCart);
-
+    
             btnAddCourse.textContent = 'Curso en el carrito';
-
             btnAddCourse.disabled = true;
             btnAddCourse.style.pointerEvents = "none";
         }
-
-    } else {
-        // El dato no existe en el localStorage
-
-        let cart = [];
-        cart.push(name);
-
-        let arrayCart = JSON.stringify(cart);
-
-        localStorage.setItem("cart", arrayCart);
-
-        btnAddCourse.textContent = 'Curso en el carrito';
-        
-        btnAddCourse.disabled = true;
-        btnAddCourse.style.pointerEvents = "none";
     }
 
 })
