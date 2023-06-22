@@ -118,12 +118,15 @@ nav.down {
 
 #cantItemsCartNav {
     position: absolute;
-    right: -3px;
-    top: -3px;
+    right: -1px;
+    top: -1px;
     background: #495057;
-    font-size: 0.8rem;
+    font-size: 80%;
     font-weight: bold;
-    padding: 1px 8px;
+    /* padding: 0 6px; */
+    width: 19px;
+    height: 19px;
+    text-align: center;
     border-radius: 50%;
     color: #fff;
 }
@@ -953,7 +956,7 @@ footer {
     position: relative;
     padding: 3rem 1rem;
     /* background: #529ca1; */
-    border-radius: 8px;
+    /* border-radius: 8px; */
     box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
 }
 
@@ -977,8 +980,7 @@ footer {
 } 
 
 .head-information-container p {
-    font-size: 1.1rem;
-    /* color: #fff; */
+    font-size: 1rem;
 }
 
 .more-details-price-container {
@@ -1000,11 +1002,27 @@ footer {
     /* color: #fff; */
     display: flex;
     align-items: center;
+    position: relative;
+    top: 1.5px;
 }
 
 .calificacion-estudiantes-container h4 {
     font-size: 0.9rem;
     margin: 0 8px;
+    display: flex;
+    margin-left: 5px;
+}
+
+.calificacion-estudiantes-container h4 strong {
+    position: relative;
+    top: 1.5px;
+}
+
+.calificacion-estudiantes-container h4 span svg {
+    margin: 0 0.4rem 0 1rem;
+    position: relative; 
+    top: -1px; 
+    color: #cb35dc;
 }
 
 .head-information-container h4 {
@@ -1106,7 +1124,7 @@ footer {
     top: 8rem;
     z-index: 10;
     background: #fff;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     overflow: hidden;
 }
 
@@ -1170,7 +1188,37 @@ footer {
     align-items: center;
 }
 
-/* ========================================================== */
+#btn-addcourse svg {
+    position: relative;
+    top: -3px;
+}
+
+#btn-addcourse span {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.posicion-alert-container {
+    position: fixed; 
+    bottom: 15px; 
+    left: 20px;
+    z-index: 10;
+}
+
+.sorry-nofound-container {
+    background-color: #86b7fe;
+    color: #fff;
+    width: max-content;
+    text-align: center;
+    padding: 2rem;
+    margin: 3rem auto;
+}
+
+.sorry-nofound-container h5 {
+    font-size: 1.1rem;
+}
+
+/* =============================PROFILE============================= */
 
 .container-global-profile {
     width: 100%;
@@ -1518,6 +1566,7 @@ footer {
 
     .content-course-container ul li {
         font-size: 0.85rem;
+        padding: 1rem 0.5rem;
     }
 
     .more-details-price-container {
@@ -1586,5 +1635,9 @@ footer {
 
     .tittle-option-container span {
         font-size: 1rem;
+    }
+
+    .posicion-alert-container {
+        left: auto;
     }
 }
