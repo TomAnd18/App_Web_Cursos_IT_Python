@@ -69,7 +69,10 @@ form.addEventListener('submit', (event) => {
             email: email,
             password: password,
             date_of_birth: dateOfBirth,
-            gender: gender
+            gender: gender,
+            date_creation: new Date(),
+            name: '',
+            surname: ''
         })
     })
         .then(response => {

@@ -31,8 +31,12 @@ fetch('https://python-app-web-cursos-it-default-rtdb.firebaseio.com/cursos/' + c
 
         const alumnos = document.getElementById('alumnos-set');
         alumnos.textContent = curso.views.toLocaleString('es-AR');
+
+        const setCantSecciones = document.getElementById('set-cantSecciones');
+        setCantSecciones.textContent = curso.classes.length;
         
         const listClasses = document.getElementById('list-classes');
+        var cantClasesTotal = 0;
 
         for (let key in curso.classes) {
 
@@ -59,6 +63,8 @@ fetch('https://python-app-web-cursos-it-default-rtdb.firebaseio.com/cursos/' + c
             const spanElement2 = document.createElement('span');
             spanElement2.textContent = e.amount_classes + ' clases';
 
+            cantClasesTotal += parseInt(e.amount_classes);
+
             // Agregar los elementos secundarios al elemento <li>
             liElement.appendChild(spanElement1);
             liElement.appendChild(spanElement2);
@@ -67,5 +73,11 @@ fetch('https://python-app-web-cursos-it-default-rtdb.firebaseio.com/cursos/' + c
             listClasses.appendChild(liElement);
 
         };
+
+        const setCantClases = document.getElementById('set-cantClases');
+        setCantClases.textContent = cantClasesTotal;
+
+        const setCantHoras = document.getElementById('set-cantHoras');
+        setCantHoras.textContent = curso.duration;
 
     });

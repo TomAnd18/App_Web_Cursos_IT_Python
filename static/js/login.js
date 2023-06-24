@@ -38,8 +38,15 @@ function buscarUsuario(datos, email, password) {
         console.log(dato["email"] == email);
         console.log("Datos: " + dato["password"] + " -- " + password);
         console.log(dato["password"] == password);
-        if(dato["email"] == email && dato["password"] == password) {
-            localStorage.setItem("user", email);
+        if(dato["email"] == email.toLowerCase() && dato["password"] == password.toLowerCase()) {
+            const dataUser = {
+                "id": key,
+                "email": email
+            }
+
+            const jsonData = JSON.stringify(dataUser);
+
+            localStorage.setItem('user', jsonData);
 
             const nameUser = document.getElementById('name-profile');
             nameUser.textContent = email[0];

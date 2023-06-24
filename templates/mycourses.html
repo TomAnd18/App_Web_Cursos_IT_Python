@@ -2,13 +2,21 @@
 
 
 {% block content %}
-<script>
-    const user = localStorage.getItem('user');
+    <script>
+        const user = localStorage.getItem('user');
 
-    if (!user) {
-        window.location.href = '/';
-    }
-</script>
+        if (!user) {
+            window.location.href = '/';
+        }
+    </script>
 
-    <h1> Mis Cursos </h1>
+    <div class="container-global-mycourses">
+        <div class="courses-container">
+            <h3>Mis Cursos</h3>
+            <p>Una vez que compres un curso, lo podras encontrar en esta sección.</p>
+            <div class="cards-miscursos-container">
+                <h4> No hay cursos para mostrar </h4>
+            </div>
+        </div>
+    </div>
 {% endblock%}

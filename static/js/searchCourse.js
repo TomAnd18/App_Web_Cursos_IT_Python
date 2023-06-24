@@ -10,6 +10,11 @@ searchForm.addEventListener('submit', (event) => {
     }
 
     const cardsContainer = document.getElementById('cards-courses-container');
+
+    if (cardsContainer === null) {
+        return;
+    }
+
     cardsContainer.innerHTML = '';
     cardsContainer.setAttribute("style", "display: grid !important;");
 
@@ -22,7 +27,6 @@ searchForm.addEventListener('submit', (event) => {
                 const objeto = data[key];
                 
                 if (objeto.name.toLowerCase().includes(buscar.toLowerCase())) {
-                    console.log("El string contiene la palabra");
                     cursosEncontrados.push(key);
 
                     const card = document.createElement('div');
@@ -110,7 +114,7 @@ searchForm.addEventListener('submit', (event) => {
                 const divInfoSearch = document.createElement('div');
                 divInfoSearch.classList = 'sorry-nofound-container';
 
-                const h5Info1 = document.createElement('h5');
+                const h5Info1 = document.createElement('h4');
                 h5Info1.textContent = '¡ Lo sentimos !'
                 const h5Info2 = document.createElement('h5');
                 h5Info2.textContent = 'No tenemos el curso que estas buscando'
