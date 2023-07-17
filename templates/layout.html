@@ -97,8 +97,8 @@
                     <form id="register-user" class="row g-3 needs-validation" novalidate>
                         <div>
                             <div class="input-group has-validation">
-                                <span class="input-group-text" id="inputGroupPrepend">Email</span>
-                                <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend" maxlength="20" required>
+                                <span class="input-group-text" id="inputGroupPrepend1">Email</span>
+                                <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend1" maxlength="20" required>
                             </div>
                         </div>
                         
@@ -106,6 +106,13 @@
                             <div style="padding: 0 8px; margin: 0;" class="alert alert-danger d-flex align-items-center" role="alert">
                                 <div style="font-size: 14px;">
                                   Ingrese un email válido
+                                </div>
+                            </div>
+                        </div>
+                        <div id="emailrepeat-validation-register" style="width: 100%; display: none;">
+                            <div style="padding: 0 8px; margin: 0;" class="alert alert-danger d-flex align-items-center" role="alert">
+                                <div style="font-size: 14px;">
+                                  El email ya ha sido registrado
                                 </div>
                             </div>
                         </div>
@@ -244,10 +251,10 @@
         <div class="container-inside-footer">
             <div class="footer-item-container">
                 <div class="links-pages">
-                    <div class="item-footer"> <a class="link-page-item" href="#!"> Inicio </a> </div>
-                    <div class="item-footer"> <a class="link-page-item" href="#!"> Cursos </a> </div>
-                    <div class="item-footer"> <a class="link-page-item" href="#!"> Nosotros </a> </div>
-                    <div class="item-footer"> <a class="link-page-item" href="#!"> Soporte Tecnico </a> </div>
+                    <div class="item-footer"> <a class="link-page-item" href="{{ url_for('home') }}"> Inicio </a> </div>
+                    <div class="item-footer"> <a class="link-page-item" href="{{ url_for('courses') }}"> Cursos </a> </div>
+                    <div class="item-footer"> <a class="link-page-item" href="{{ url_for('about') }}"> Nosotros </a> </div>
+                    <div class="item-footer"> <a class="link-page-item" href="{{ url_for('about') }}"> Soporte Tecnico </a> </div>
                 </div>
                 <div class="links-redes-container">
                     <div class="item-redes-container"> <a class="item-redes" target="_blank" href="http://www.facebook.com"> <img id="facebook" src="../static/images/facebook.svg" alt="facebook"> </a> </div>
@@ -256,7 +263,7 @@
                     <div class="item-redes-container"> <a class="item-redes" target="_blank" href="https://www.youtube.com/"> <img src="../static/images/youtube.svg" alt="youtube"> </a> </div>
                 </div>
             </div>
-            <div class="reserved-container"> Copyright © 2023. All Rights Reserved Tomas Regalado </div>
+            <div class="reserved-container"> Copyright © 2023. All Rights Reserved <a target="_blank" href="https://tomand18.github.io/Pagina_Web_Personal/">Tomas Regalado</a> </div>
         </div>
     </footer>
 

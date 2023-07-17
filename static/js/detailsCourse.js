@@ -5,7 +5,7 @@ const cursoId = urlParams.get('id');
 fetch('https://python-app-web-cursos-it-default-rtdb.firebaseio.com/cursos/' + cursoId + '.json')
     .then(response => response.json())
     .then(curso => {
-        console.log(curso);
+        
         const tittle = document.getElementById('tittle-course');
         tittle.textContent = curso.name;
 
@@ -22,6 +22,9 @@ fetch('https://python-app-web-cursos-it-default-rtdb.firebaseio.com/cursos/' + c
 
         const calificaion = document.getElementById('asignar-calificacion');
         calificaion.textContent = curso.qualification;
+
+        const  totalCalifi = document.getElementById('set-calificacion-total');
+        totalCalifi.textContent = '(' + Math.floor(curso.views / 1.1).toLocaleString('es-AR') + ' calificaciones)'
 
         const duration = document.getElementById('duration-getCourse');
         duration.textContent = Math.floor(curso.duration / 2);

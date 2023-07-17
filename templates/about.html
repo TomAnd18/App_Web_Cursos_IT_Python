@@ -2,6 +2,41 @@
 
 {% block content %}
     <div class="container-global-about">
+      <div class="carousel-container-home">
+            <div style="height: 100%;" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div style="height: 100%;" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/images/background-carousel-one.jpg" class="d-block w-100" alt="carousel-backgroung-courses">
+                        <div class="carousel-caption d-md-block">
+                            <!-- <h5>Una amplia selección de cursos</h5>
+                            <p>Elige entre más de 210.000 cursos de vídeo en línea con nuevo contenido cada mes.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/background-carousel-two.jpg" class="d-block w-100" alt="carousel-backgroung-courses">
+                        <div class="carousel-caption d-md-block">
+                            <!-- <h5>Amplía tus oportunidades profesionales</h5>
+                            <p>Tanto si trabajas en el segmento del aprendizaje automático como si deseas desarrollar tu carrera en desarrollo web.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/background-carousel-three.jpg" class="d-block w-100" alt="carousel-backgroung-courses">
+                        <div class="carousel-caption d-md-block">
+                            <!-- <h5>Mejora tus habilidades de desarrollo de software</h5>
+                            <p>Las principales empresas utilizan los mismos cursos para ayudar a los empleados a mantener al día sus habilidades.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
         <div class="accordion accordion-flush accordion-about" id="accordionFlushExampleabout">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -10,7 +45,14 @@
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                <div class="accordion-body">
+                  Somos una plataforma especializada en ofrecer cursos de tecnología de la información (IT) que te ayudarán a adquirir conocimientos y habilidades 
+                  en diversas áreas, como desarrollo web, programación, bases de datos, ciberseguridad y más. <br> <br>
+                  Nuestro objetivo es brindarte contenido educativo de calidad, impartido por expertos en la industria, para que puedas potenciar tu carrera 
+                  profesional y alcanzar tus metas en el campo de la tecnología. <br> <br>
+                  En nuestra plataforma, encontrarás una amplia variedad de cursos diseñados para adaptarse a diferentes niveles de experiencia y necesidades 
+                  específicas. Además, contamos con recursos adicionales, como material complementario, ejercicios prácticos y certificados de finalización.
+                </div>
               </div>
             </div>
             <div class="accordion-item">
@@ -20,47 +62,87 @@
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div class="accordion-body">
+                  <code>1.</code> Inicie sesión con su cuenta para poder comprar cursos. <br> <br>
+                  <code>2.</code> Seleccione el curso que desea adquirir de nuestra amplia selección de cursos disponibles. <br> <br>
+                  <code>3.</code> Revise los detalles del curso, como el precio y la duración. <br> <br>
+                  <code>4.</code> Haga clic en el botón "Comprar ahora" para hacer la compra del curso. <br> <br>
+                  <code>5.</code> Será redirigido a la plataforma de Mercado Pago, donde podrás completar el proceso de pago de forma segura y confiable. <br> <br>
+                  <code>6.</code> Sigua las instrucciones en pantalla para ingresar sus datos de pago y confirmar la transacción. <br> <br>
+                  <code>7.</code> Acceda a <code> Mis Cursos </code> para ver sus cursos adquiridos y comenzar a aprender.
+                </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed btn-tittle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Contáctanos
+                    Medios de pago
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body">
+                  En nuestra plataforma, aceptamos diversos medios de pago para que puedas adquirir nuestros cursos de manera conveniente y segura. A 
+                  través de la integración con Mercado Pago, te ofrecemos las siguientes opciones: <br> <br>
+                  <code>Tarjetas de crédito:</code> Podés realizar el pago con tarjetas de crédito de diferentes entidades financieras. Aceptamos las 
+                  principales tarjetas, como Visa, Mastercard, American Express, entre otras. Al momento de realizar el pago, tendrás la opción de ingresar 
+                  los datos de tu tarjeta de crédito de forma segura. <br> <br>
+                  <code>Tarjetas de débito:</code> Si preferís utilizar tu tarjeta de débito, también podés hacerlo. Aceptamos tarjetas de débito de diversos bancos 
+                  para facilitar tu compra. Durante el proceso de pago, seleccioná la opción de pago con tarjeta de débito y seguí las instrucciones proporcionadas.
+                </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed btn-tittle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Términos y condiciones
+                  Contáctanos
                 </button>
               </h2>
               <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body">
+                  Si tenés alguna pregunta, consulta o necesitás asistencia adicional, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte. <br> <br>
+                  Envíanos un correo electrónico a <code>tomander38@gmail.com</code> y te responderemos a la brevedad.
+                  También podés visitar mi página personal en <a target="_blank" href="https://tomand18.github.io/Pagina_Web_Personal/">Tomas Regalado</a> donde encontrarás más información sobre mí y los servicios que ofrecemos.
+                </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed btn-tittle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
-                    ¿ Contáctanos ?
+                  Términos y condiciones
                 </button>
               </h2>
               <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body">
+                  Antes de realizar la compra de nuestros cursos, te recomendamos leer detenidamente los siguientes términos y condiciones: <br> <br>
+                  <code>1-</code>Propiedad intelectual: Todo el contenido, materiales y recursos proporcionados en nuestros cursos están protegidos por derechos de 
+                  autor. Está estrictamente prohibido copiar, reproducir o distribuir cualquier contenido sin autorización previa. <br> <br>
+                  <code>2-</code>Acceso al contenido: Al adquirir un curso, obtendrás acceso al contenido correspondiente durante el tiempo especificado en la descripción 
+                  del curso. Este acceso es personal e intransferible, y no está permitido compartir tus credenciales de acceso con terceros. <br> <br>
+                  <code>3-</code>Responsabilidad del usuario: Es responsabilidad del usuario asegurarse de contar con los requisitos técnicos necesarios, como una 
+                  conexión a Internet estable y un dispositivo compatible, para acceder y disfrutar del contenido de los cursos. <br> <br>
+                  <code>4-</code>Cancelaciones y reembolsos: Si por alguna razón deseas cancelar tu compra, por favor revisa nuestra política de cancelación y reembolso 
+                  en la sección correspondiente de nuestra página web. Ten en cuenta que las políticas pueden variar dependiendo del curso y las circunstancias específicas. <br> <br>
+                  <code>5-</code>Actualización de precios y contenido: Nos reservamos el derecho de modificar los precios de nuestros cursos en cualquier momento. Además, nos 
+                  esforzamos por mantener nuestro contenido actualizado y relevante, por lo que ocasionalmente podemos realizar modificaciones, mejoras o adiciones al contenido de los cursos. <br> <br>
+                  <code>6-</code>Privacidad y protección de datos: Valoramos tu privacidad y nos comprometemos a proteger tus datos personales. Consulta nuestra política de privacidad 
+                  para obtener más información sobre cómo recopilamos, utilizamos y protegemos tus datos.
+                </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed btn-tittle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
-                    ¿ Contáctanos ?
+                    Ayuda técnica
                 </button>
               </h2>
               <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body">
+                  Si estás experimentando algún problema técnico o tienes alguna pregunta relacionada con nuestros cursos, nuestro equipo de ayuda técnica está aquí para asistirte. <br> <br>
+                  Por favor, envíanos un mensaje detallando tu problema o consulta a la siguiente dirección de correo electrónico: <code>tomander38@gmail.com</code> <br> Nos aseguraremos de 
+                  responder a tu mensaje lo antes posible y brindarte la ayuda que necesitas. <br> <br>
+                  Estamos comprometidos en ofrecerte un excelente servicio de ayuda técnica para garantizar que puedas disfrutar de una experiencia fluida y exitosa al utilizar nuestros cursos y recursos de aprendizaje.
+                  No dudes en contactarnos si tienes alguna dificultad técnica o necesitas orientación adicional. Estamos aquí para ayudarte y asegurarnos de que aproveches al máximo tu experiencia de aprendizaje con nosotros.
+                </div>
               </div>
             </div>
         </div>

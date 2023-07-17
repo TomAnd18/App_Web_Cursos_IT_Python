@@ -43,7 +43,7 @@ function paintData(data) {
     var day = String(dateTime.getDate()).padStart(2, "0"); // Agregar cero inicial si es necesario
     var hours = String(dateTime.getHours()).padStart(2, "0"); // Agregar cero inicial si es necesario
     var minutes = String(dateTime.getMinutes()).padStart(2, "0"); // Agregar cero inicial si es necesario
-    var formattedDateTime = year + "-" + month + "-" + day + " | " + hours + ":" + minutes + "hs";
+    var formattedDateTime = year + "-" + month + "-" + day + "   " + hours + ":" + minutes + "hs";
     
     const setDateOfCreation = document.getElementById('set-datauser-dateofcreation');
     setDateOfCreation.textContent = formattedDateTime;

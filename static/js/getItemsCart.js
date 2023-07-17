@@ -239,26 +239,6 @@ function getDataCart() {
     }
 }
 
-
-// function addEventoBtnDelete(deleteLink) {
-//     deleteLink.addEventListener('click', () => {
-//         console.log('Item deleted');
-
-//         let cart = JSON.parse(localStorage.getItem('cart'));
-//         console.log(cart)
-//         const elementoAEliminar = e.name;
-//         const indice = cart.findIndex(item => item.name === elementoAEliminar);
-
-//         if (indice !== -1) {
-//             cart.splice(indice, 1);
-//         }
-
-//         localStorage.setItem('cart', JSON.stringify(cart));
-
-//         getDataCart();
-//     });
-// }
-
 getDataCart();
 
 // setInterval(getDataCart, 1000);

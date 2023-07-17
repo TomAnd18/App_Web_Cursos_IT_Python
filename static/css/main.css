@@ -219,6 +219,12 @@ footer {
     color: #6c757d;
 }
 
+.reserved-container a {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: bold;
+}
+
 .cart-view {
     display: none;
 }
@@ -393,7 +399,7 @@ footer {
     /* background-image: url('../images/background-home.jpg');
     background-size: cover; */
     /* background-attachment: fixed; */
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -586,16 +592,17 @@ footer {
     /* height: 70vh; */
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url('../images/background-home.jpg');
-    background-size: cover;
+    background-size: auto;
     padding: 3rem 0;
 }
 
 #accordionFlushExampleabout {
     width: 50% !important;
-    padding: 2rem 0 8rem 0 !important;
+    padding: 2rem 0 1rem 0 !important;
     background: #fff !important;
 }
 
@@ -1189,6 +1196,12 @@ footer {
     background: #00000011 !important;
 }
 
+#advertencia-login-buynow {
+    padding: 0 8px;
+    font-size: 14px;
+    display: none;
+}
+
 .more-details-price-container h6 {
     font-size: 0.8rem;
     width: 100%;
@@ -1316,6 +1329,10 @@ footer {
     font-size: 1rem;
     padding: 0 1rem;
     text-transform: capitalize;
+}
+
+#set-datauser-email {
+    text-transform: none !important;
 }
 
 .container-password-eye span {
@@ -1497,6 +1514,8 @@ footer {
 
     .container-btn-login {
         text-align: center;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .icono-carrito-container {
@@ -1811,5 +1830,19 @@ footer {
 
     #modalUpdateDataUser {
         top: -10% !important;
+    }
+
+    .carousel-container-home {
+        width: 100%;
+    }
+
+    #accordionFlushExampleabout {
+        width: 100% !important;
+        padding: 2rem 0 8rem 0 !important;
+        background: #fff !important;
+    }
+
+    .container-global-about {
+        padding: 0;
     }
 }
