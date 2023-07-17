@@ -7,59 +7,62 @@
                 <div style="border: none; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                      Filtrar
+                      Filtros
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body">
                         <h3>Cursos</h3>
-                      <div class="container-options-filter">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="allcourses" checked>
-                            <label class="form-check-label" for="allcourses">
-                                Todos los cursos
-                            </label>
+                        <div class="container-options-filter">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="allcourses" checked>
+                                <label class="form-check-label" for="allcourses">
+                                    Todos los cursos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="frontend">
+                                <label class="form-check-label" for="frontend">
+                                    Front-End
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="backend">
+                                <label class="form-check-label" for="backend">
+                                    Back-End
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="frontend">
-                            <label class="form-check-label" for="frontend">
-                                Front-End
-                            </label>
+                        <h3>Duración</h3>
+                        <div class="container-options-filter">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="allhours" checked>
+                                <label class="form-check-label" for="allhours">
+                                    Todos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="menor200">
+                                <label class="form-check-label" for="menor200">
+                                    Menor a 200h
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="200a300">
+                                <label class="form-check-label" for="200a300">
+                                    De 200h a 300h
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="mayor300">
+                                <label class="form-check-label" for="mayor300">
+                                    Mayor a 300h
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="backend">
-                            <label class="form-check-label" for="backend">
-                                Back-End
-                            </label>
+                        <div class="container-btn-filter">
+                            <button id="btn-filter-courses"> Filtrar </button>
                         </div>
-                    </div>
-                    <h3>Duración</h3>
-                    <div class="container-options-filter">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="allhours" checked>
-                            <label class="form-check-label" for="allhours">
-                                Todos
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="menor200">
-                            <label class="form-check-label" for="menor200">
-                                Menor a 200h
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="200a300">
-                            <label class="form-check-label" for="200a300">
-                                De 200h a 300h
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="mayor300">
-                            <label class="form-check-label" for="mayor300">
-                                Mayor a 300h
-                            </label>
-                        </div>
-                    </div>
                     </div>
                   </div>
                 </div>
@@ -71,4 +74,5 @@
     </div> 
 
     <script src="../static/js/getCourses.js"></script>
+    <script src="../static/js/filter.js"></script>
 {% endblock%}
